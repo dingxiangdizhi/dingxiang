@@ -1,23 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>最新地址发布页</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>访问入口</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.box {
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 90%;
+    max-width: 400px;
+}
+
+.btn {
+    display: block;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-main { background: #00c853; }
+.btn-back { background: #2962ff; }
+.btn-tg   { background: #0088cc; }
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.tip {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffd54f;
+}
+</style>
 </head>
-<body style="text-align:center;margin-top:100px;font-family:Arial;">
 
-<h2>最新地址发布页</h2>
-<p>请收藏本页面，防止丢失</p>
+<body>
 
-<p>
-<a href="https://你的最新地址1.com">👉 点击进入最新地址1</a>
-</p>
+<div class="container">
+    <div class="box">
 
-<p>
-<a href="https://你的最新地址2.com">👉 备用地址</a>
-</p>
+        <h1>🔐 安全访问入口</h1>
+        <p class="tip">请收藏本页面，防止失联</p>
 
-<p>更新时间：2026-03-24</p>
+        <!-- 主线路 -->
+        <a class="btn btn-main" href="https://www.dingxiang.club">🚀 主线路入口</a>
+
+        <!-- 备用 -->
+        <a class="btn btn-back" href="https://www.dingxiang.app">🌐 备用线路</a>
+
+        <!-- TG -->
+        <a class="btn btn-tg" href="https://t.me/dingxiangapp" target="_blank">📢 官方Telegram频道</a>
+
+        <div class="status" id="status">
+            正在检测最佳线路...
+        </div>
+
+    </div>
+</div>
+
+<script>
+// 自动跳转（3秒后）
+setTimeout(function(){
+    document.getElementById("status").innerText = "正在跳转主线路...";
+    window.location.href = "https://www.dingxiang.club";
+}, 3000);
+</script>
 
 </body>
 </html>
